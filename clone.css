@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #f4f7f8;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-width:400px;
+  
+}
+
+.heading {
+  width: 100vw;
+  height: 5.5rem;
+  background-color: #f1c40f;
+  color: #282936;
+  box-shadow: 0px 10px 16px rgb(248, 247, 247);
+}
+
+.heading h1 {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 400;
+}
+
+
+
+#add{
+    position: fixed;
+    right: 1rem;
+    top: 7rem;
+    min-width: 20px;
+    font-family: inherit;
+    
+    font-size: inherit;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:10px;
+}
+
+
+#add:hover{
+    position: fixed;
+    right: 1rem;
+    top: 7rem;
+    min-width: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
+
+.main {
+  padding: 2rem;
+}
+
+.note {
+  background-color: #fff;
+  margin: 30px 20px;
+  height: 200px;
+  width: 400px;
+  overflow-y: scroll;
+  margin-top: 7rem;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.note .operation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .operation button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+}
+
+.fa-edit,
+.fa-trash-alt {
+  color: #fff;
+  padding: 10px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+}
+
+.fa-trash-alt {
+  background-color: #e74c3c;
+}
+
+.fa-edit:hover {
+  background-color: #fff;
+  color: #27ae60;
+  filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+}
+
+.fa-trash-alt:hover {
+  background-color: #fff;
+  color: #e74c3c;
+  filter: drop-shadow(0px 10px 8px rgb(219, 218, 218));
+}
+
+.hidden {  /*when we'll ad this hidden class to any element will get hidden */
+  display: none;
+}
